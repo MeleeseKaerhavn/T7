@@ -17,21 +17,26 @@ body {
     object-fit: cover;
 }
 
+#choose-grid {
+    padding: 1rem;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
     padding: 20px;
     justify-items: center;
+    gap: 20px;
+    margin: 0 auto;
     }
 
 .card {
     display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 5;
+  grid-row: span 4;
     background-color: #C87D87;
     padding: 15px;
-    width: 180px;
+    width: 80%;
     color: #FAF8F2;
 }
 
