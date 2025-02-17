@@ -6,8 +6,8 @@ Skriv derfor jeres fælles retningslinjer for punkterne herunder(tilføj gerne f
 ## Projektstruktur:
 Beslut, hvordan I vil organisere jeres projekt – struktur for mapper og filer.
 - Hvordan organiserer I billeder, fonte og andre ressourcer? Vi laver mapper i workspace med navnene "css", "img", "js", "font"
-- Hvor placerer I boilerplate?(fx CSS- og JavaScript-filer, der bruges på tværs af projektet)
-- Hvor placerer I HTML, CSS- og JavaScript-filer til fx detaljevisning og listevisning?
+- Hvor placerer I boilerplate?(fx CSS- og JavaScript-filer, der bruges på tværs af projektet)? De ligger respektive mapper
+- Hvor placerer I HTML, CSS- og JavaScript-filer til fx detaljevisning og listevisning? respektive mapper
 
 ## Navngivning:
 Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktur og undgå forvirring.
