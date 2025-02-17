@@ -1,4 +1,37 @@
-main {
+body {
     background-color: #FAF8F2;
     }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+    }
+
+.card {
+    display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+    background-color: #C87D87;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    color: #FAF8F2;
+}
+
+.button {
+    background-color: #FAF8F2;
+    color: #C87D87;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #fce9e1d7;
+}
 
