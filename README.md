@@ -11,8 +11,8 @@ Beslut, hvordan I vil organisere jeres projekt – struktur for mapper og filer.
 
 ## Navngivning:
 Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktur og undgå forvirring.
-- Hvordan navngiver I filnavne? (fx små bogstaver, ingen mellemrum, brug af - eller _)
-- Hvordan sikre I at det er til at forstå hvilke HTML-, CSS- og JavaScript-filer der høre sammen?
+- Hvordan navngiver I filnavne? (fx små bogstaver, ingen mellemrum, brug af - eller _)  singleView (ingen mellemrund, med camelCase, ingen tegnsætning
+- Hvordan sikre I at det er til at forstå hvilke HTML-, CSS- og JavaScript-filer der høre sammen? navngivet efter HTML partner
 
 ## Link til scripts:
 - Hvor placerer I script referencer i HTML'en? (fx i <head> med defer attribute, eller sidst i <body>)
