@@ -26,9 +26,9 @@ Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktu
 - Hvordan kommunikerer i om ændringer i main branchen når feature merges? Puller ved nyeste branch
 
 ## Kode:
-- Hvordan skriver i funktioner i JavaScript?(fx med function keyword eller som arrow functions)
-- Beslut hvilken CSS selector i benyttes til referener i henholdsvis CSS og JavaScript(fx. id'er til JavaScript og Classes til CSS)
-- Skal filer have korte forklaringer som kommentarer?
+- Hvordan skriver i funktioner i JavaScript?(fx med function keyword eller som arrow functions)   Fat arrows
+- Beslut hvilken CSS selector i benyttes til referener i henholdsvis CSS og JavaScript(fx. id'er til JavaScript og Classes til CSS) Vi følger layoutdiagrammet
+- Skal filer have korte forklaringer som kommentarer? nej tak
 
 # Funktionalitet
 Dette afsnit skal forklare hvad I konkret har arbejde med, for at udvikle websitet. Tænk over hvilke interaktioner brugeren kan foretage på sitet? Eller hvordan websitet håndterer og præsenterer data? Eksempler på funktionalitet, der kan beskrives:
