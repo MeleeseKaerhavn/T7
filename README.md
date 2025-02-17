@@ -21,9 +21,9 @@ Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktu
 - Hvordan navngiver I branches, så alle kan forstår hvem der arbejder i branchen og på hvad?(fx feature-lotte-formular)   Eget navn-feature-navn på feature
 
 ## Arbejdsflow:
-- Hvordan fordeler I arbejdet, så I undgår at flere arbejder i de samme filer samtidigt?
-- Hvordan sikrer I, at commit-beskeder er beskrivende?
-- Hvordan kommunikerer i om ændringer i main branchen når feature merges?
+- Hvordan fordeler I arbejdet, så I undgår at flere arbejder i de samme filer samtidigt?  Vi deler det ud på forhånd
+- Hvordan sikrer I, at commit-beskeder er beskrivende?  skriver en beskrivende besked, eller forklarer over skrift ens tanker
+- Hvordan kommunikerer i om ændringer i main branchen når feature merges? Puller ved nyeste branch
 
 ## Kode:
 - Hvordan skriver i funktioner i JavaScript?(fx med function keyword eller som arrow functions)
