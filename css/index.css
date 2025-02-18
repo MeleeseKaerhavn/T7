@@ -14,6 +14,63 @@ header {
     z-index: 9;
 }
 
+#login {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    font-size: 15px;
+    border-width: 2px;
+    border-color: #FAF8F2;
+    color: #FAF8F2;
+    padding: 8px;
+    top: 15px;
+    right: 40px;
+    width: 40px;
+    height: 10px;
+    z-index: 12;
+}
+
+#cart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FAF8F2;
+    border-radius: 20px;
+    padding: 8px;
+    top: 15px;
+    left: 5px;
+    width: 40px;
+    height: 10px;
+    z-index: 11;
+}
+
+#cart:hover, #login:hover {
+    background-color: #c16e6e;
+    cursor: pointer;
+}
+
+#cart img {
+    width: 60%;
+}
+
+#cart p {
+    color: #FAF8F2;
+}
+
+@media (min-width: 768px) {
+    #cart {
+        top: 15px;
+        left: 1100px;
+    }
+
+    #login {
+        right: 50px;
+    }
+}
+
 #logo {
     position: absolute;
     top: 5px;
@@ -23,9 +80,10 @@ header {
     #burger-menu {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 2px;
         z-index: 100;
         cursor: pointer;
+        color: #FAF8F2;
     }
     
     #burger-menu input {
@@ -53,7 +111,7 @@ header {
     
     .menu a {
         text-decoration: none;
-        color: #333;
+        color: #FAF8F2;
         padding: 10px 20px;
         display: block;
     }
@@ -66,11 +124,12 @@ header {
     .search-container {
         display: flex;
         position: relative;
-        left: 85%;
+        left: 80%;
+        margin-top: 5px;
     }
     
     #search-bar {
-        width: 10%;
+        width: 15%;
         padding: 8px;
         border-radius: 15px;
         border-color: #d57272;
@@ -144,10 +203,12 @@ header {
 
 h3 {
     font-size: 1.5rem;
+    margin: 0;
 }
 
 h4 {
     font-size: 1.2rem;
+    margin: 0.5;
 }
 
 .card img {
