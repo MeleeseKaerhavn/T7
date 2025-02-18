@@ -1,3 +1,4 @@
+const myId = new URLSearchParams(window.location.search).get("id");
 const productContainer = document.querySelector("#single-view");
 
 const queryString = window.location.search;
@@ -26,3 +27,4 @@ fetch(`https://dummyjson.com/products/${productId}`)
         `;
     })
     .catch(error => console.error('Error fetching product:', error));
+
