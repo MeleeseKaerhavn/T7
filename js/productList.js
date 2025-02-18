@@ -11,7 +11,7 @@ function showList(products) {
         markup +=
         `      
            <div class="product-card">
-                <a href="https://dummyjson.com/products/${product.id}"><img src="${product.thumbnail}" alt="${product.title}"></a>
+                <a href="../product.html?id=${product.id}"><img src="${product.thumbnail}" alt="${product.title}"></a>
                 <h3>${product.title}</h3>
                 <p class="price">${product.price} kr.</p>
                 <button class="buy-btn">Read more</button>
