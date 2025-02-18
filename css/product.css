@@ -1,1 +1,39 @@
+body {
+  background-color: #faf8f2;
+  color: #c87d87;
+}
 
+.boks {
+  background-color: #c87d87;
+  color: #faf8f2;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+
+.button {
+  background-color: #c87d87;
+  color: #faf8f2;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 5px #855b5b;
+  margin-right: 280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.button:hover {
+  background-color: #fce9e1d7;
+  color: #c87d87;
+}
+
+.margin_left {
+  margin-left: 20px;
+  margin-right: 20px;
+}

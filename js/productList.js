@@ -1,3 +1,4 @@
+
 const productContainer = document.querySelector(".products-grid"); // Min grid container der holder alle mine elementer i produktliste
 
 fetch(`https://dummyjson.com/products`) // link til listen med alle productinformationer for alle id
@@ -20,3 +21,4 @@ function showList(products) {
     productContainer.innerHTML = markup; // Insert the generated HTML
 }
  
+
