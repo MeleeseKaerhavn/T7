@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <header>
+        <div id="cart"></div>
+        <div id="logo">
+            <img src="img/logorz.png" alt="">
+        </div>
+        <div id="burger-menu">
+            <input type="checkbox" id="burger-checkbox">
+            <label for="burger-checkbox">☰</label>
+            <div class="menu">
+                <a href="index.html">Front Page</a>
+                <a href="produktListe.html">Catalogue</a>
+                <a href="aboutUs.html">About Us</a>
+            </div>
+        </div>
+    </header>
+
     <main>
         <section class="hero">
             <img src="img/heroimg.png" alt="">
@@ -15,7 +31,10 @@
 
         <section class="nav">
             <div class="filter">
-
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
             </div>
         <div id="choose-grid">
             <h2>Beauty products:</h2>
