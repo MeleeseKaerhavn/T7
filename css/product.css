@@ -3,7 +3,18 @@ body {
   color: #c87d87;
 }
 
-.boks {
+main{
+  display: flex;
+}
+
+
+form{
+  margin-top: 5em;
+}
+
+
+
+.product-info {
   background-color: #c87d87;
   color: #faf8f2;
   margin-left: 25px;
@@ -13,6 +24,21 @@ body {
   padding-left: 25px;
   padding-bottom: 5px;
 }
+
+.product-info h1{
+  text-align: center;
+}
+
+.middle{
+  text-align: center;
+}
+
+.middle hr{
+  color:  #faf8f2;
+}
+
+
+
 
 .button {
   background-color: #c87d87;
@@ -33,7 +59,13 @@ body {
   color: #c87d87;
 }
 
-.margin_left {
+.single{
   margin-left: 20px;
   margin-right: 20px;
+  display: flex;
+
+}
+
+.short{
+  margin: 0 30em 2em 30em;
 }
