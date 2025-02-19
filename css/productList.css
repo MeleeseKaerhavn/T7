@@ -13,6 +13,7 @@ body {
 }
 
 
+
 /* *********Searchbar********* */
 
 .search-container {
@@ -37,7 +38,7 @@ body {
 }
 
 
-/* PRODUCT LIST */
+/* ************PRODUCT LIST ***************/
 .product-list {
     padding: 20px;
     position: relative;
@@ -81,11 +82,16 @@ body {
 
 .buy-btn {
     background-color:#f8e4e4;
-    color: #C87D87;
     border-color: #C87D87;
     padding: 8px;
     cursor: pointer;
     margin-top: 5px;
+}
+
+
+.buy-btn a{
+    text-decoration: none;
+    color: #b35a5a;
 }
 
 .buy-btn:hover {
@@ -94,6 +100,8 @@ body {
 }
 
 
+
+/* ***********Filter*********** */
 
 .filter button {
     background-color: #C87D87;
