@@ -14,7 +14,7 @@ function showList(products) {
                 <a href="product.html?id=${product.id}"><img src="${product.thumbnail}" alt="${product.title}"></a>
                 <h3>${product.title}</h3>
                 <p class="price">${product.price} kr.</p>
-                <button class="buy-btn"><a href="../product.html?id=${product.id}">Read more</a></button>
+                <button class="buy-btn"><a href="product.html?id=${product.id}">Read more</a></button>
             </div>
         `;
     }).join(""); 
