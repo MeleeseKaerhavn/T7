@@ -77,7 +77,7 @@ body {
 
 .card {
     display: grid;
-    grid-template-rows: subgrid;
+    grid-template-rows: subgrid;     /* hvad ville du her? */
     grid-row: span 4;
     background-color:#d5a5ac;
     padding: 10px;
@@ -94,7 +94,7 @@ h3 {
 
 h4 {
     font-size: 1.2rem;
-    margin: 0.5;
+    margin: 0.5em;
 }
 
 .card img {
