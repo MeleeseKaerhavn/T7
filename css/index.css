@@ -1,3 +1,10 @@
+:root {
+    --open: "Open Sans", sans-serif;
+}
+
+
+
+
 body {
   background-color: #faf8f2;
   margin: 0;
@@ -25,6 +32,35 @@ body {
   cursor: pointer;
   margin-left: 5px;
 }
+=======
+    background-color: #FAF8F2;
+    margin: 0;
+    width: 100%;
+    font-family: var(--open);
+    }
+
+.search-container {
+        display: flex;
+        position: relative;
+        left: 80%;
+        margin-top: 5px;
+ }
+    
+#search-bar {
+        width: 15%;
+        padding: 8px;
+        border-radius: 15px;
+        border-color: #d57272;
+}
+    
+#search-btn {
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        margin-left: 5px;
+}
+    
 
 .hero {
   width: 100%;
@@ -47,9 +83,11 @@ body {
   font-size: 2.5rem;
 }
 
-h2 {
-  color: #c87d87;
-}
+  h2 {
+    color: #C87D87;
+    font-family: var(--open);
+  }
+
 
 @media (min-width: 768px) {
   .hero h1 {
