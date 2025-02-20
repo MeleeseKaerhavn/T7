@@ -39,22 +39,95 @@ Dette afsnit skal forklare hvad I konkret har arbejde med, for at udvikle websit
 
 Brug korte beskrivelser, som i eksemplerne herover
 
+-At lande på et landing page uden et overvælg af produkter
+-at kunnne navigere til kataloget på flere måder efter præference
+- at få vist produkterne dynamisk vha APIen
+- At kunne efterlade reviews af hvert produkt
+- At kunne læse andres reviews af produktet
+
+
 # API endpoints
 Dette afsnit skal liste de endpoints fra API'et i har benyttet:
 - (fx. https://dummyjson.com/products)
+- https://dummyjson.com/products?id=X
+- https://dummyjson.com/products/id
 
 # Dokumentation af Funktion 
 Dette afsnit skal beskrive en funktion I selv har udviklet. Det kunne eksempelvis være en funktion der generere en listen over fx. produkter: 
 
-- Beskrivelse: Hvad gør funktionen? Hvordan spiller den sammen med resten af koden?
-- Parametre: Hvilke input forventes (fx en værdi fra en dropdown eller URL'en)?
-- Returnerer: Beskriv, om funktionen returnerer en værdi eller blot manipulerer DOM’en.
-- Eksempel på brug: Indsæt funktions-koden herunder(der hvor koden er i eksemplet) og vis, hvordan funktionen kaldes:
+- Beskrivelse:  henter produktdata fra API'et baseret på et produkt-ID fra URL. Funktionen indsætter oplysninger, billede og anmeldelse i HTML-en i #single-view.
+- Parametre: tager id fra URLen
+- Returnerer: manipulerer DOM’en med innerHTML
+- Eksempel på brug: 
 ```javascript
-//funktionens kode:
-function voresFunktion(sprog){
-  console.log(`${sprog} syntax highlighting`)
-};
-//hvordan funktionen kaldes:
-voresFunktion("JavaScript");
+
+
+
+//Javascript kode fra opgave:
+
+const productContainer = document.querySelector("#single-view");
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const productId = urlParams.get("id");
+
+fetch(`https://dummyjson.com/products/${productId}`)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log("Fetched data:", data);
+
+        productContainer.innerHTML = `
+            <div class="single">
+                <div>
+                <img src="${data.thumbnail}" alt="${data.title}">
+                </div>
+                <div>
+                <h2>${data.title}</h2>
+                <h3>${data.price} kr.</h3>
+                <p>${data.description}</p>
+                <div class="button"><p>Add to cart</p></div>
+                </div>
+                <form>
+                    <label for="reviewName">Review Title:</label><br>
+                    <input type="text" id="reviewName" name="reviewName" required><br><br>
+
+                    <label for="rating">Rating:</label><br>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Good</option>
+                        <option value="3">3 - Average</option>
+                        <option value="2">2 - Poor</option>
+                        <option value="1">1 - Terrible</option>
+                    </select><br><br>
+
+                    <label for="reviewText">Your Review:</label><br>
+                    <textarea id="reviewText" name="reviewText" rows="4"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="product-info">
+            <h1>Product Info:</h1>
+            <div class="middle">
+                <p>Brand: ${data.brand}</p>
+                <p>Category: ${data.category}</p>
+                <h5>Dimensions:</h5>
+                <p>width:${data.dimensions.width}</p>
+                <p>height:${data.dimensions.height}</p>
+                <p>depth:${data.dimensions.depth}</p>
+                <p>Rating: ${data.rating}</p>
+                <hr>
+                <h2>Review Title</h2>
+                <h2>&#9733 &#9733 &#9734 &#9734 &#9734</h2>
+                <hr class="short">
+                <hr class="short">
+                <hr class="short">
+                
+
+            </div>
+            </div>
+        `;
+    })
+
 ```
