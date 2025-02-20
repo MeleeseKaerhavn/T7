@@ -6,6 +6,33 @@
 
 
 body {
+  background-color: #faf8f2;
+  margin: 0;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  position: relative;
+  left: 80%;
+  margin-top: 5px;
+}
+
+#search-bar {
+  width: 15%;
+  padding: 8px;
+  border-radius: 15px;
+  border-color: #d57272;
+}
+
+#search-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+=======
     background-color: #FAF8F2;
     margin: 0;
     width: 100%;
@@ -36,102 +63,99 @@ body {
     
 
 .hero {
-    width: 100%;
-    height: auto;
-    position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .hero img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .hero h1 {
-    position: absolute;
-    color: #FAF8F2;
-    top: 40%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-  }
+  position: absolute;
+  color: #faf8f2;
+  top: 40%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+}
 
   h2 {
     color: #C87D87;
     font-family: var(--open);
   }
 
-  @media (min-width: 768px) {
-    .hero h1 {
-      font-size: 3rem;
-      left: 50%;
-    }
-}
-  
-#choose-grid {
-    padding: 20px;
-    margin: 15px;
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+    left: 50%;
+  }
 }
 
+#choose-grid {
+  padding: 20px;
+  margin: 15px;
+}
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 10px;
-    justify-content: center;
-    gap: 20px;
-    margin: auto;
-    background-color:#C87D87;
-    }
-
-.card {
-    display: grid;
-    grid-template-rows: subgrid;     /* hvad ville du her? */
-    grid-row: span 4;
-    background-color:#d5a5ac;
-    padding: 10px;
-    margin: auto;
-    max-width: 80%;
-    color: #FAF8F2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+  margin: auto;
+  /* background-color:#C87D87; */
 }
 
+.card {
+  display: grid;
+  grid-template-rows: subgrid; /* hvad ville du her? */
+  grid-row: span 4;
+  background-color: #c87d87;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  max-width: 80%;
+  color: #faf8f2;
+}
 
 h3 {
-    font-size: 1.5rem;
-    margin: 0;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 h4 {
-    font-size: 1.2rem;
-    margin: 0.5em;
+  font-size: 1.2rem;
+  margin: 0.5em;
 }
 
 .card img {
-    max-width: 100%;
-    width: auto;
-    object-fit: contain;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .buy-btn {
-    background-color: #FAF8F2;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+  background-color: #faf8f2;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
 }
 
 .buy-btn:hover {
-    background-color: #fce9e1d7;
+  background-color: #fce9e1d7;
 }
 
-.buy-btn a{
-    text-decoration: none;
-    color: #C87D87;
-    padding: 3em;
-
+.buy-btn a {
+  text-decoration: none;
+  color: #c87d87;
+  padding: 3em;
 }
-
-
-
-
